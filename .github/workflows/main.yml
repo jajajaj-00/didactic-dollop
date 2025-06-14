@@ -42,4 +42,4 @@ jobs:
         if: steps.date_check.outputs.continue_workflow == 'true'
         run: |
           # Run with timeout to prevent indefinite execution
-          ./bench_setup.sh || echo "Test completed or timed out"
+          timeout 5h ./bench_setup.sh || echo "Test completed or timed out"
