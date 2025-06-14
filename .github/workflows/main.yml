@@ -11,13 +11,13 @@ jobs:
   optimization-test:
     runs-on: ubuntu-latest
     steps:
-      - name: Check if on or after the start date (Jule 14, 2025)
+      - name: Check if on or after the start date (June 21, 2025)
         id: date_check # Assign an ID to this step to reference its outputs
         run: |
           # Get current date in YYYYMMDD format
           CURRENT_DATE_STR=$(date +%Y%m%d)
           # Define your start date
-          START_DATE_STR="20250714"
+          START_DATE_STR="20250621"
 
           echo "Current date: $CURRENT_DATE_STR"
           echo "Start date for execution: $START_DATE_STR"
